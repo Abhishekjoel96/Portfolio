@@ -1,0 +1,58 @@
+@import "./globalColor";
+
+.App {
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: $appHeaderBG;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(0.625rem + 2vmin);
+  color: $textColorDark;
+}
+
+.App-link {
+  color: $appLink;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+body {
+  background-color: $spaceDeepBlue;
+  transition: background-color 0.3s ease;
+  color: $textColorDark;
+}
+
+.dark-mode {
+  .card-body, .repo-card-div, .certificate-card, .education-card, 
+  .experience-card, .blog-card, .skill-card-body, .project-card {
+    background: rgba(30, 30, 60, 0.7) !important;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(100, 100, 200, 0.2) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+    transition: all 0.3s ease !important;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(130, 60, 200, 0.3) !important;
+    }
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: $spaceStarlight;
+  }
+}
