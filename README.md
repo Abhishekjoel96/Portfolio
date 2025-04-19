@@ -70,6 +70,4 @@ npm run build
 # Then deploy the contents of the build folder
 ```
 
-## License
 
-MIT
